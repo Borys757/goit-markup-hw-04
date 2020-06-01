@@ -137,6 +137,28 @@ nav {
 .connection .items + .items {
   margin-left: 30px;
 }
+/*.connection*/
+.mail::before {
+  display: inline-flex;
+  margin-right: 10px;
+  min-height: 13px;
+  min-width: 16px;
+  content: "";
+  background-image: url(../images/envelope.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.phone::before {
+  display: inline-flex;
+
+  margin-right: 10px;
+  min-height: 15px;
+  min-width: 10px;
+  content: "";
+  background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 /* main part */
 
 .section.advantages .section-title {
@@ -159,10 +181,28 @@ nav {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.advantages-title img {
-  margin-bottom: 30px;
-}
 
+.advantages-title .items::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.advantages-title .items:nth-of-type(1)::before {
+  background-image: url(../images/antenna.svg), url(../images/Rectangle.svg);
+}
+.advantages-title .items:nth-of-type(2)::before {
+  background-image: url(../images/clock.svg), url(../images/Rectangle.svg);
+}
+.advantages-title .items:nth-of-type(3)::before {
+  background-image: url(../images/diagram1.svg), url(../images/Rectangle.svg);
+}
+.advantages-title .items:nth-of-type(4)::before {
+  background-image: url(../images/astronaut1.svg), url(../images/Rectangle.svg);
+}
 .advantages-title .items + .items {
   margin-left: 30px;
 }
@@ -185,11 +225,12 @@ footer {
 }
 .section.advantages {
   padding-top: 94px;
-  padding-bottom: 94px;
-
   margin-bottom: 0px;
 }
-
+.section.advantages .container {
+  padding-bottom: 94px;
+  border-bottom: 1px solid #ececec;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -240,6 +281,15 @@ footer {
   padding: 10px 32px;
   display: block;
   min-width: 200px;
+}
+.buttom.primary::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/send.svg);
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  background-position: center;
 }
 .buttom.primarys {
   display: inline-block;
@@ -437,6 +487,60 @@ h1 {
   margin-top: 0px;
   color: var(--color-of-main-text);
 }
+.team-title .social {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.instagram {
+  background-image: url(../images/instagram2.svg);
+}
+
+.instagram:hover,
+.instagram:focus {
+  background-color: var(--akcent);
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.twitter {
+  background-image: url(../images/twitter1.svg);
+}
+.twitter:hover,
+.twitter:focus {
+  background-color: var(--akcent);
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.facebook {
+  background-image: url(../images/facebook1.svg);
+}
+.facebook:hover,
+.facebook:focus {
+  background-color: var(--akcent);
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.linked {
+  background-image: url(../images/linkedin1.svg);
+}
+.linked:hover,
+.linked:focus {
+  background-color: var(--akcent);
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
 .logotips {
   display: flex;
   justify-content: space-evenly;
@@ -554,13 +658,47 @@ footer {
   padding-left: 0px;
 }
 .connect-icon .icon + .icon {
-  margin-left: 10px;
+  margin-left: 34px;
 }
 
 .connect b {
   display: inline-block;
   margin-bottom: 21px;
 }
+.icon-instagram {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/insta.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon-twitter {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/twit.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon-face {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/face.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-linked {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/linked.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .location {
   margin-right: ;
 }
