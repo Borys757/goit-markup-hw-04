@@ -368,6 +368,8 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border: none;
+  padding: 6px 22px;
 }
 .buttons li + li {
   margin-left: 8px;
@@ -704,10 +706,6 @@ footer {
 .connect b {
   display: inline-block;
   margin-bottom: 21px;
-}
-
-.location {
-  margin-right: ;
 }
 .icon-pic {
   display: inline-flex;
