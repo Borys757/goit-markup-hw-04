@@ -316,7 +316,6 @@ footer {
 .buttom.primary::after {
   content: "";
   display: inline-block;
-
   background-image: url(../images/send.svg);
   height: 24px;
   width: 24px;
