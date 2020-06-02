@@ -149,6 +149,11 @@ nav {
   background-repeat: no-repeat;
   background-size: contain;*/
 }
+.mail {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 .envelope {
   fill: var(--color-of-second-text);
   height: 12px;
@@ -169,7 +174,11 @@ nav {
 .smartphone:focus {
   fill: var(--akcent);
 }
-
+.phone {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 /*.phone::before {
   display: inline-flex;
 
@@ -307,6 +316,7 @@ footer {
 .buttom.primary::after {
   content: "";
   display: inline-block;
+
   background-image: url(../images/send.svg);
   height: 24px;
   width: 24px;
@@ -368,10 +378,6 @@ button {
   padding-left: 0px;
   margin-bottom: 50px;
   margin-top: 0px;
-}
-.icon:hover,
-.icon:focus {
-  background-color: var(--akcent);
 }
 
 .feathure h2 {
@@ -490,7 +496,7 @@ h1 {
   min-width: 270px;
   background-color: var(--white-color);
   border-radius: 4px;
-  padding-bottom: 36px;
+  padding-bottom: 24px;
 }
 
 .team-title .item + .item {
@@ -510,13 +516,44 @@ h1 {
   color: var(--color-of-main-text);
 }
 .social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
 }
+.social:hover,
+.social:focus {
+  background-color: var(--akcent);
+  border-radius: 50%;
+}
 .instagram {
   fill: var(--items-color);
-  width: 20px;
-  height: 20px;
+}
+.instagram:hover,
+.instagram:focus {
+  fill: var(--white-color);
+}
+.twitter {
+  fill: var(--items-color);
+}
+.twitter:hover,
+.twitter:focus {
+  fill: var(--white-color);
+}
+.facebook {
+  fill: var(--items-color);
+}
+.facebook:hover,
+.facebook:focus {
+  fill: var(--white-color);
+}
+.linkedin {
+  fill: var(--items-color);
+}
+.linkedin:hover,
+.linkedin:focus {
+  fill: var(--white-color);
 }
 .logotips {
   display: flex;
@@ -564,6 +601,27 @@ h1 {
 .item .item-box + .item-box {
   margin-left: 30px;
 }
+.item .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+.item .icon:hover,
+.item .icon:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+.clients {
+  fill: var(--items-color);
+}
+.clients:hover,
+.clients:focus {
+  fill: var(--akcent);
+}
 address {
   font-weight: normal;
   font-size: 14px;
@@ -579,6 +637,11 @@ address .address-first {
 address .address-second {
   display: inline-block;
   margin-bottom: 9px;
+  color: var(--footer-text);
+}
+address .address-seconds {
+  display: inline-block;
+
   color: var(--footer-text);
 }
 div b {
@@ -642,44 +705,26 @@ footer {
   display: inline-block;
   margin-bottom: 21px;
 }
-.icon-instagram {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/insta.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.icon-twitter {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/twit.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.icon-face {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/face.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.icon-linked {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/linked.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 .location {
   margin-right: ;
 }
-
+.icon-pic {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.icon-pic:hover,
+.icon-pic:focus {
+  background-color: var(--akcent);
+}
+.footer-icon {
+  fill: var(--white-color);
+}
 .sending b {
   display: inline-block;
   margin-bottom: 21px;
