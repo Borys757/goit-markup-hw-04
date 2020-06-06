@@ -556,29 +556,37 @@ h1 {
 .instagram {
   fill: var(--items-color);
 }
-.instagram:hover,
-.instagram:focus {
+.social:hover > .instagram {
+  fill: var(--white-color);
+}
+.social:focus > .instagram {
   fill: var(--white-color);
 }
 .twitter {
   fill: var(--items-color);
 }
-.twitter:hover,
-.twitter:focus {
+.social:hover > .twitter {
+  fill: var(--white-color);
+}
+.social:focus > .twitter {
   fill: var(--white-color);
 }
 .facebook {
   fill: var(--items-color);
 }
-.facebook:hover,
-.facebook:focus {
+.social:hover > .facebook {
+  fill: var(--white-color);
+}
+.social:focus > .facebook {
   fill: var(--white-color);
 }
 .linkedin {
   fill: var(--items-color);
 }
-.linkedin:hover,
-.linkedin:focus {
+.social:hover > .linkedin {
+  fill: var(--white-color);
+}
+.social:focus > .linkedin {
   fill: var(--white-color);
 }
 .logotips {
