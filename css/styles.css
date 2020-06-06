@@ -160,8 +160,14 @@ nav {
   width: 16px;
   margin-right: 10px;
 }
-.envelope:hover,
-.envelope:focus {
+.mail:hover,
+.mail:focus {
+  color: var(--akcent);
+}
+.mail:hover > .envelope {
+  fill: var(--akcent);
+}
+.mail:focus > .envelope {
   fill: var(--akcent);
 }
 .smartphone {
@@ -170,14 +176,21 @@ nav {
   width: 10px;
   margin-right: 10px;
 }
-.smartphone:hover,
-.smartphone:focus {
-  fill: var(--akcent);
-}
+
 .phone {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+.phone:hover,
+.phone:focus {
+  color: var(--akcent);
+}
+.phone:hover > .smartphone {
+  fill: var(--akcent);
+}
+.phone:focus > .smartphone {
+  fill: var(--akcent);
 }
 /*.phone::before {
   display: inline-flex;
