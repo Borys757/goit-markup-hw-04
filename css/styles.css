@@ -322,9 +322,10 @@ footer {
   text-align: center;
   line-height: 1.87;
   border-radius: 4px;
-  padding: 10px 32px;
-  display: block;
-  min-width: 200px;
+  padding: 10px 8px 10px 29px;
+  display: flex;
+  width: 200px;
+  align-items: center;
 }
 .buttom.primary::after {
   content: "";
@@ -409,6 +410,9 @@ button {
   display: flex;
   padding: 0px;
   margin: 0px;
+}
+.feathure-title img {
+  display: block;
 }
 .feathure-title .item {
   min-width: 370px;
@@ -512,6 +516,12 @@ h1 {
 }
 .team-title {
   display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+.team-title img {
+  display: block;
+  margin-bottom: 30px;
 }
 .team-title .item {
   min-width: 270px;
@@ -527,10 +537,6 @@ h1 {
 
 .team-title .item + .item {
   margin-left: 30px;
-}
-.section.team ul {
-  padding: 0px;
-  margin: 0px;
 }
 
 .section.team .section-title {
